@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Add your link under this comment -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- CSS only -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- Add components here -->
+  <div id="myDIV" class="header">
+    <h2>Task Manager</h2>
+  </div>
+
+  <div class="container-fluid">
+    <form id="newTaskForm">
+      <div class="form-group px-4 pt-4 mb-0">
+        <label class="form-group-text" for="taskType">Task Type</label>
+        <select class="form-select form-control" id="taskType">
+          <option selected>Choose...</option>
+          <option value="School Work">School Work</option>
+          <option value="Home Work">Home Work</option>
+        </select>
+      </div>
+
+      <div class="form-group px-4 py-4">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="form-group px-4">
+        <label for="description" class="form-label">Description</label>
+        <textarea type="text" class="form-control" id="description"></textarea>
+      </div>
+      <div class="form-row px-4">
+        <div class="form-group col ">
+          <label for="assignedTo">Assigned To</label>
+          <select class="form-select form-control" id="assignedTo">
+            <option selected>Choose...</option>
+            <option value="Mike">Mike</option>
+            <option value="Mary">Mary</option>
+            <option value="Jim">Jim</option>
+            <option value="Susan">Susan</option>
+            <option value="Tom">Tom</option>
+          </select>
+        </div>
+        <div class="form-group col">
+          <label for="dueDate">Due Date</label>
+          <input type="date" class="form-control" id="dueDate">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Add Task</button>
+      <div id="alertMessage" style="display: none" class="alert alert-danger" role="alert">
+        Error message    
+        </div>
+      </form>
+  </div>
+
+  <!-- Add your JS Bundle script under this comment. Nothing else should go under here. -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="js/taskManager.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
