@@ -1,8 +1,4 @@
 import assert from 'assert';
-import sinon from 'sinon';
-
-// require('../js/taskManager.js').default;
-
 import { TaskManager } from '../js/taskManager.js';
 
 describe('TaskManager', function () {
